@@ -1,0 +1,163 @@
+* html body {width: expression(document.documentElement.clientWidth < 900 ? "900px" : "auto");}
+* html .logo a {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/logo.png', sizingmethod='crop');
+}
+* html .main-container .main-t {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-main-container-t.png', sizingmethod='crop');
+}
+* html .main-container .main-b {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-main-container-b.png', sizingmethod='crop');
+}
+* html .social-list img, .png{
+behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "images/transparent.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true)
+);
+}
+* html .steps-list li a .number {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-number.png', sizingmethod='crop');
+}
+* html .fade-gallery .steps-list li a {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-steps-list.png', sizingmethod='crop');
+}
+* html .steps-list li.active a,
+* html .steps-list li a:hover {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-steps-list-hover.png', sizingmethod='crop');
+}
+* html .fade-gallery .login-box {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-login-box.png', sizingmethod='crop');
+}
+* html #login .submit,
+* html .invite .submit {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-submit.png', sizingmethod='crop');
+}
+* html #login .input-holder,
+* html .invite .input-holder {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-input-holder.png', sizingmethod='crop');
+}
+* html .register-box .register {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-register.png', sizingmethod='crop');
+}
+* html .steps-list li.active .number,
+* html .steps-list li a:hover .number {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-number-hover.png', sizingmethod='crop');
+}
+* html .social-list .text-wrapp{zoom:1;}
+* html .content-t {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-content-t.png', sizingmethod='crop');
+}
+* html .content-b {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-content-b.png', sizingmethod='crop');
+}
+* html #sidebar {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-sidebar.png', sizingmethod='crop');
+}
+#content .gradient {height: expression(this.parentNode.offsetHeight + "px");}
+* html .table-holder .add-list {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-add-list.png', sizingmethod='crop');
+}
+* html .links-box .send {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-send-link.png', sizingmethod='crop');
+}
+* html .recipe-form .left {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-input-left.png', sizingmethod='crop');
+}
+* html .recipe-form .right {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-input-right.png', sizingmethod='crop');
+}
+* html .recipe-form .input-holder {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-input-center.png', sizingmethod='scale');
+}
+* html .link-container .rightbar {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-link-right.png', sizingmethod='crop');
+}
+* html .link-container .leftbar {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-link-left.png', sizingmethod='crop');
+}
+* html .link-container .center {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-link-center.png', sizingmethod='scale');
+}
+* html .recipe-description .recipe-description-t {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-decription-box-t.png', sizingmethod='crop');
+}
+* html .recipe-description .recipe-description-b {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-decription-box-b.png', sizingmethod='crop');
+}
+* html .save-links .save {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-save.png', sizingmethod='crop');
+}
+* html .tabs-container .bottom-shadow {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-bottom-shadow.png', sizingmethod='crop');
+}
+* html #search .input-holder {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-search-input.png', sizingmethod='crop');
+}
+* html #search .submit,
+* html .top-bar-form .submit {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-submit-search.png', sizingmethod='crop');
+}
+* html .top-bar-form .rightside {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-recipe-input-right.png', sizingmethod='crop');
+}
+* html .top-bar-form .leftside {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-recipe-input-left.png', sizingmethod='crop');
+}
+* html .top-bar-form .input-holder {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-recipe-input-center.png', sizingmethod='scale');
+}
+* html .sub-menu li{border:expression( (this===this.parentNode.childNodes[0]) ? "none" : "auto");}
+* html .block-container .threecolumns {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-threecolumns-profile.png', sizingmethod='crop');
+}
+* html .threecolumns .column h3,
+* html .column .recipe-list .text,
+* html .column .text-holder .wrapp,
+* html .text-holder .ingr-list li,
+* html .column .week-list li,
+* html .column .recipe-list li{zoom:1;}
+* html .lightbox-holder .lightbox-t {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-lightbox-t.png', sizingmethod='crop');
+}
+* html .lightbox-holder .lightbox-b {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-lightbox-b.png', sizingmethod='crop');
+}
+* html .lightbox-holder .lightbox {
+	background:url(/images/transparent.gif) no-repeat;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-lightbox.png', sizingmethod='scale');
+}

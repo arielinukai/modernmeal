@@ -1,0 +1,101 @@
+
+body {
+	background-color: #6b0c35;
+	margin: 0px;
+	padding: 0px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+h2{
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 40px;
+}
+
+#wrapper{
+	width: 1015px;
+	height: 2190px;
+	margin: 0 auto;
+	background: url(/images/sample-recipe.jpg)
+}
+
+#content{
+	position: relative;
+	height: 525px;
+	width: 640px;
+	left: 25px;
+	top: 850px;	
+}
+
+.name{
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	height: 20px;
+	margin-bottom: 25px;
+	
+}
+.time{
+	color: #6b0c35;
+	font-size: 12px;
+	font-weight: bold;
+	height: 20px;
+	text-transform:uppercase;
+	margin: 0 20px 25px 0;
+	display: inline;
+	
+}
+
+.category{
+	color: #000;
+	font-size: 12px;
+	font-weight: bold;
+	height: 20px;
+	text-transform:uppercase;
+	margin-right: 20px;
+	margin-bottom: 30px;
+	display: inline;
+	
+}
+
+.ingredients{
+	width: 300px;
+	margin: 0 20px 20px 10px;
+	float: left;
+}
+
+.ingredients ul{
+	margin: 0;
+	padding: 0;
+}
+
+.ingredients li.item{
+	font-size: 12px;
+	height: 20px;
+	width: 300px;
+	border-bottom-width: 2px;
+	border-bottom-style: dashed;
+	border-bottom-color: #95a5ac;
+	list-style-type:none;
+	margin-top: 10px;
+	padding: 0;
+}
+
+.directions{
+	float: right;
+	width: 295px;
+	margin-right: 10px;
+	font-size: 12px;
+}
+.directions ul{
+	margin:0;
+	padding: 0;
+}
+.directions li{
+	margin-bottom: 15px;
+	padding: 0;
+}
+
+.clear{
+	clear: both;
+}
