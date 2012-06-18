@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>ModernMeal</title>
+	<%= stylesheet_link_tag 'all' %>
+	<%= stylesheet_link_tag 'jquery.fancybox-1.3.4' %>
+	<!-- Scripts -->
+	<%= javascript_include_tag "prototype" %>
+	<%= javascript_include_tag "jquery-1.4.4.min" %>
+	<%= javascript_include_tag "jquery.cookie" %>
+	<%= javascript_include_tag "jquery.main" %>
+	<%= javascript_include_tag "application" %>
+	<%= javascript_include_tag "controls" %>
+	<%= javascript_include_tag "dragdrop" %>
+	<%= javascript_include_tag "rails" %>
+	<%= javascript_include_tag "effects" %>
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen"/><![endif]-->
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="main-container">
+        <div class="main-t">&nbsp;</div>
+		<div id="main">
+		  <div class="fade-gallery">
+		    <ul class="gallery">
+			  <li class="active"><img src="/images/home_1.gif" alt="" width="861" height="351" /></li>
+			  <li><img src="/images/home_2.gif" alt="" width="861" height="351" /></li>
+			  <li><img src="/images/home_3.gif" alt="" width="861" height="351" /></li>
+			  <li><img src="/images/home_4.gif" alt="" width="861" height="351" /></li>
+		    </ul>
+			<ul class="steps-list">
+			  <li>
+			    <a href="#">
+				  <span class="number">1</span>
+				  <span class="text1">ADD YOUR</span>
+				  <strong class="text2">RECIPES</strong>
+				</a>
+			  </li>
+			  <li>
+			    <a href="#">
+				  <span class="number">2</span>
+				  <span class="text1">MANAGE YOUR</span>
+				  <strong class="text2">RECIPES</strong>
+				</a>
+			  </li>
+			  <li>
+			    <a href="#">
+				  <span class="number">3</span>
+				  <span class="text1">PLAN YOUR</span>
+				  <strong class="text2">MEALS</strong>
+			    </a>
+			  </li>
+			  <li>
+			    <a href="#" class="last-button">
+				  <span class="number">4</span>
+				  <span class="text1">GET YOUR</span>
+				  <strong class="text2">GROCERIES</strong>
+				</a>
+			  </li>
+			</ul>
+			<div class="login-box-holder">
+			  <div class="login-box">
+			    <%= form_for(:session, :url => { :controller => 'sessions', :action => "create" }, :html => {:id => 'login' }) do |f| %> 
+				  <fieldset>
+				    <div class="heading-holder">
+					  <div align="center">
+					    <h3>MODERN<br/>MEAL</h3>
+					  </div>
+					</div>
+					<div class="flash-default">
+					  <% flash.each do |key, value| %>
+				        <div class="flash <%= key %>"><%= value %></div>
+				      <% end %>
+				    </div>
+				    <br/>
+					<div class="row">
+					  <span class="input-holder">
+						<%= f.text_field :email, :class => 'text', :value => 'email address' %> 
+					  </span>
+					</div>
+					<div class="row">
+					  <span class="input-holder">
+						<%= f.password_field :password, :class => 'text', :value => 'password' %>
+					  </span>
+					</div>
+					<div class="login-submit">
+					  <div class="columns-box">
+					    <div class="info-box">
+						  <a href="#" class="test-run">Submit</a>
+						  <div class="register-master">
+						    <div class="register-row">
+							  <%= link_to "Forgot password?", :controller => "email", :action => "remind" %>
+						    </div>
+						    <div class="register-row">
+							  <%= link_to "Register now!", signup_path %>
+						    </div>
+						  </div>
+					    </div>
+					  </div>
+                    </div>
+				  </fieldset>
+				<% end %>
+							</div>
+						</div>
+					</div>
+					<div class="box-holder">
+						<div class="columns-box">
+							<div class="info-box">
+								<h3>So, what is ModernMeal?</h3>
+								<a href="#" class="test-run">GIVE IT A TEST RUN</a>
+							</div>
+							<div class="threecolumns">
+								<div class="holder">
+									<div class="frame">
+										<div class="text-column">
+											<h4 class="profile"><a href="#">YOUR PROFILE</a></h4>
+											<p>Modernmeal is free to use! Just create a profile and you are ready to revolutionize the way you cook, saving time by making delicious meals at home.</p>
+										</div>
+										<div class="text-column center">
+											<h4 class="add"><a href="#">ADD RECIPES</a></h4>
+											<p>We don’t pretend to know the recipes you like.  Get your recipes from anywhere and easily add, organize and access them from anywhere, anytime using modern meal!</p>
+										</div>
+										<div class="text-column">
+											<h4 class="search"><a href="#">SEARCH RECIPES</a></h4>
+											<p>Search your modernmeal digital cookbook for favorites, recently added, or search by price, main ingredient, occasion or many other options to find exactly what you’re looking for in seconds!</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="threecolumns">
+								<div class="holder">
+									<div class="frame">
+										<div class="text-column">
+											<h4 class="planner"><a href="#">WEEKLY PLANNER</a></h4>
+											<p>Our simple to use planning tools allow you to prepare your weekly meals in minutes from any computer!</p>
+										</div>
+										<div class="text-column center">
+											<h4 class="grocery"><a href="#">GROCERY LIST</a></h4>
+											<p>Modernmeal was created to conveniently connect the recipe to the ingredients you need.  </p>
+										</div>
+										<div class="text-column">
+											<h4 class="mobile"><a href="#">GET GROCERIES</a></h4>
+											<p>Turn your recipe into a smart shopping list, in the future use curbside pickup service or have your groceries delivered to your home. This changes everything.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="ad-box">
+							<span class="ad-title">PARTNER ADVERTISEMENT</span>
+							<a href="#"><img src="/images/ad-image2.jpg" alt="" width="300" height="249" /></a>
+						</div>
+					</div>
+					<div class="social-box">
+						<div class="holder">
+							<div class="frame">
+								<h4>Help Us Get the Word Out</h4>
+								<div class="social-list">
+									<div class="social-section">
+										<a href="#"><img src="/images/ico-twitter.png" alt="" width="46" height="46" /></a>
+										<div class="text-wrapp">
+											<p>Follow us on Twitter for updates and news on ModernMeal!</p>
+										</div>
+									</div>
+									<div class="social-section">
+										<a href="#"><img src="/images/ico-facebook.png" alt="" width="48" height="48" /></a>
+										<div class="text-wrapp">
+											<p>Be a Fan of ours on Facebook and share recipes with your friends!</p>
+										</div>
+									</div>
+									<div class="social-section">
+										<a href="#"><img src="/images/ico-email.png" alt="" width="46" height="46" /></a>
+										<div class="text-wrapp">
+											<p>Email a friend and get them on board with dinner plans!</p>
+										</div>
+									</div>
+									<div class="social-section">
+										<a href="#"><img src="/images/ico-question.png" alt="" width="47" height="48" /></a>
+										<div class="text-wrapp">
+											<p>Have A question? Get in touch with the ModernMeal team.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-b">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	  jQuery.noConflict();
+	  jQuery('.test-run').click(function () {
+	    jQuery("#login").submit();  
+	  });
+	</script>
+</body>
+</html>

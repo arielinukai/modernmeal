@@ -1,0 +1,547 @@
+<html>
+  <body>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" hspace="0" >
+      <tr>
+        <td bgcolor="#91b063" >
+          <table align="center" width="694" cellpadding="0" cellspacing="0" >
+            <tr>
+              <td colspan="4" bgcolor="white" style="padding-left:17px;"  >
+                <h2  style="font-size:20px; color:#a7a7a7; overflow:hidden; height:1%; no-repeat; padding:8px 0 10px 3px; margin:0;">
+                  <img src="http://exiastore.com.mx/images2/title-partners-ico.gif" alt="" />
+                  <font color="#A7A7A7;">Welcome to ModernMeal!</font>
+                </h2>
+              </td>
+            </tr>   
+            <tr>
+              <td colspan="4" bgcolor="white" style="padding-left:17px;" >
+                <p style="font: 11px Helvetica, Arial, sans-serif;color: #A6A6A6;" >
+                  You have successfully signed up to ModernMeal.com,
+		          your username is: <%= @user.email %>.<br>
+		        </p>
+		        <p style="font: 11px Helvetica, Arial, sans-serif;color: #A6A6A6;">
+		          To login to the site, just follow this link: <%= @url %>.
+		        </p>
+		        <p style="font: 11px Helvetica, Arial, sans-serif;color: #A6A6A6;">
+			      Thanks for joining and have a great day!
+			    </p>
+		      </td>
+            </tr>
+            <tr>
+              <td  bgcolor="white" width="135" style="height:215px; margin-right:12px; margin-left:12px; margin-bottom:25px;">
+                <h3 style="display:block; font-size:13px; color:#A6A6A6; padding-left:16px; 
+                           font-family: Helvetica, Arial, sans-serif;padding-top:28px;" >
+                  Community
+                </h3>
+                <table border="0" cellpadding="0" cellspacing="0" >
+                  <tr>
+                    <td>
+                      <a style="text-decoration:none; color:#c8ba23; padding-left:15px;" href="http://www.allrecipes.com">
+                        <img style="border-style:none;" src="http://exiastore.com.mx/images2/logo-allrecipes.jpg" alt="AllRecipes.com" />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul  style="width:88px;">
+                        <li style="list-style:none; color: #c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0; 
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.allrecipes.com">Banana Crumb Muffins</a>
+                        </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.allrecipes.com">World's Best Lasagna</a>
+                        </li>
+                        <li style="list-style:none; color: #c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.allrecipes.com">Ham and Potato Soup</a>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td bgcolor="white" width="135" style="height:215px; margin-right:12px; margin-left:12px; margin-bottom:25px;">
+                <table border="0" cellpadding="0" cellspacing="0" >
+                  <tr>
+                    <td>
+                      <h3 style="display:block; font-size:13px; color:#A6A6A6; padding-left:16px;
+                                 font-family:Helvetica, Arial, sans-serif; padding-top:13px;">Chef's
+                      </h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a style="text-decoration:none; color: #c8ba23;" href="http://www.foodnetwork.com">
+                        <img style="border-style:none;" src="http://exiastore.com.mx/images2/logo-foodnetwork.jpg" alt="AllRecipes.com"/>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul style="width:88px;">
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.foodnetwork.com">Creamy Black Beans</a>
+                        </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.foodnetwork.com">Chicken Enchiladas</a>
+                        </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.foodnetwork.com">Beef Stew</a>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>                       				
+              </td>
+              <td bgcolor="white" width="135" style="height:215px; margin-right:12px; margin-left:12px; margin-bottom:25px;">
+                <table border="0" cellpadding="0" cellspacing="0" >
+                  <tr>
+                    <td>
+                      <h3 style="display:block; font-size:13px; color:#A6A6A6; padding-left:16px; 
+                                 font-family: Helvetica, Arial, sans-serif;padding-top:45px;">
+                        Gourmet
+                      </h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a style="text-decoration:none; color:#c8ba23;" href="http://www.epicurious.com">
+                        <img style="border-style:none;" src="http://exiastore.com.mx/images2/logo-epicurous.jpg" alt="AllRecipes.com"/>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul style="width:88px;" >
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0; 
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.epicurious.com">
+	                        Grilled Turkey Burgers
+	                      </a>
+                        </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.epicurious.com">
+	                        Asian Pork &amp; Mushroom Burger Wraps
+	                      </a>
+	                    </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.epicurious.com">
+	                        Dominican Chimichurri Burgers
+	                      </a>
+	                    </li>
+                      </ul> 
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td bgcolor="white" width="135" style="height:215px; margin-right:12px; margin-left:12px; margin-bottom:25px;">
+                <table>
+                  <tr>
+                    <td>
+                      <h3  style="display:block; font-size:13px; color:#A6A6A6; padding-left:16px; padding-top:32px;
+                                  font-family: Helvetica, Arial, sans-serif;">
+                        Video
+                      </h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a style="text-decoration:none; color: #c8ba23;" href="http://www.gourmandia.com">
+                        <img style="border-style:none;" 
+                             src="http://exiastore.com.mx/images2/logo-gourmandia.jpg" 
+                             alt="AllRecipes.com" />
+                      </a> 
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul style="width:88px;">
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.gourmandia.com">
+	                        Pumpkin Cappuccion with Cardamom
+	                      </a>
+	                    </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.gourmandia.com">
+	                        Salmon Express
+	                      </a>
+	                    </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.gourmandia.com">
+	                        Apple Cinnamon Prawn and olive oil
+	                      </a>
+	                    </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="white" width="135" style="height:215px; margin-right:12px; margin-left:12px; margin-bottom:25px;">
+                <table>
+                  <tr>
+                    <td>
+                      <h3 style="display:block; font-size:13px; color:#A6A6A6; padding-left:22px;
+                                 font-family: Helvetica, Arial, sans-serif;">
+                        LIFESTYLE
+                      </h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a style="text-decoration:none; color:#c8ba23;" href="http://www.kitchendaily.com">
+                        <img style="border-style:none;" src="http://exiastore.com.mx/images2/logo-kitchendaily.jpg" alt="AllRecipes.com" />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul style="width:88px;">
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0; 
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.kitchendaily.com"> 
+	                        Cranberry Pork Roast
+	                      </a>
+	                    </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.kitchendaily.com">
+	                        Crock Posole
+	                      </a>
+	                    </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.kitchendaily.com">
+	                        Pot Roast
+	                      </a>
+	                    </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td bgcolor="white" width="135" style="height:215px; margin-right:12px; margin-left:12px; margin-bottom:25px;">
+                <table  border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td>
+                      <h3 style="display:block; font-size:13px; color:#A6A6A6; padding-left:16px;
+                                 font-family: Helvetica, Arial, sans-serif;padding-top:12px;" >
+                        Healthy
+                      </h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a style="text-decoration:none; color:#c8ba23;" href="http://www.cookinglight.com">
+                        <img style="border-style:none;" src="http://exiastore.com.mx/images2/logo-cookinglight.jpg" alt="AllRecipes.com" />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul style="width:88px;">
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.cookinglight.com">
+	                        Chicken and Sausage
+	                      </a>
+                        </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.cookinglight.com">
+	                        Ritzy Chicken Nuggets
+	                      </a>
+	                    </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.cookinglight.com">
+	                        Mughlai Chicken
+	                      </a>
+	                    </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>   
+              </td>
+              <td bgcolor="white" width="135" style="height:215px; margin-right:12px; margin-left:12px; margin-bottom:25px;">
+                <table border="0" cellpadding="0" cellspacing="0" >
+                  <tr>
+                    <td>
+                      <h3 style="display:block; font-size:13px; color:#A6A6A6; padding-left:16px;
+                                 font-family: Helvetica, Arial, sans-serif;padding-top:24px;"  >
+                        Southern
+                      </h3>   
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a style="text-decoration:none; color:#c8ba23;" href="http://www.southernliving.com">
+                        <img style="border-style:none;" src="http://exiastore.com.mx/images2/logo-southernliving.jpg" alt="AllRecipes.com"/>
+                      </a> 
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul style="width:88px;">
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.southernliving.com">
+	                        Banana Crumb Muffins
+	                      </a>
+	                    </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.southernliving.com">
+	                        World's Best Lasagna
+	                      </a>
+	                    </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.southernliving.com">
+	                        Ham and Potato Soup
+	                      </a>
+	                    </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>                       				
+              </td>
+              <td bgcolor="white" width="135" style="height:215px; margin-right:12px; margin-left:12px; margin-bottom:25px;">
+                <table border="0" cellpadding="0" cellspacing="0" >
+                  <tr>
+                    <td>
+                      <h3 style="display:block; font-size:13px; color:#A6A6A6; padding-left:16px;
+                                 font-family: Helvetica, Arial, sans-serif;padding-top:13px;">
+                        Foodie
+                      </h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a style="text-decoration:none; color:#c8ba23;" href="http://www.foodandwine.com">
+                        <img style="border-style:none;" src="http://exiastore.com.mx/images2/logo-foodandwine.jpg" alt="AllRecipes.com"/>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul style="width:88px;">
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.foodandwine.com">
+	                        Big-batch Veggie Chili
+	                      </a>
+	                    </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.foodandwine.com">
+	                        Dan Dan Noodles
+	                      </a>
+	                    </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.foodandwine.com">
+	                        Spicy Sriracha Chicken Wings
+	                      </a>
+	                    </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>                       				
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="white" width="135" style="height:215px; margin-right:12px; margin-left:12px; margin-bottom:25px;">
+                <table border="0" cellpadding="0" cellspacing="0" >
+                  <tr>
+                    <td>
+                      <h3 style="display:block; font-size:13px; color:#A6A6A6; padding-left:16px;
+                                 font-family: Helvetica, Arial, sans-serif;padding-top:10px;"  >
+                        Beginner
+                      </h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a style="text-decoration:none; color:#c8ba23;" href="http://www.simplyrecipes.com">
+                        <img style="border-style:none;" src="http://exiastore.com.mx/images2/logo-simplyrecipes.jpg" alt="AllRecipes.com"/>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul style="width:88px;">
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.simplyrecipes.com"> 
+	                        Beef Brisket Pot Roast
+	                      </a>
+	                    </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.simplyrecipes.com">
+	                        Braised Leeks
+	                      </a>
+	                    </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.simplyrecipes.com">
+	                        Crab Cakes
+	                      </a>
+	                    </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>                       				
+              </td>
+              <td bgcolor="white" width="135" style="height:215px; margin-right:12px; margin-left:12px; margin-bottom:25px;">
+                <table border="0" cellpadding="0" cellspacing="0" >
+                  <tr>
+                    <td>
+                      <h3 style="display:block; font-size:13px; color:#A6A6A6; padding-left:16px; padding-top:32px;
+                                 font-family: Helvetica, Arial, sans-serif;">
+                        Home Cooking
+                      </h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a style="text-decoration:none; color:#c8ba23;" href="http://www.tasteofhome.com">
+	                    <img style="border-style:none;" src="http://exiastore.com.mx/images2/logo-taste0fhome.jpg" alt="AllRecipes.com"/>
+	                  </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul style="width:88px;">
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.tasteofhome.com">
+	                        Butternut Squash Soup
+	                      </a>
+	                    </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.tasteofhome.com">
+	                        Zesty Hamburger Soup
+	                      </a>
+	                    </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.tasteofhome.com">
+	                        Chicken Wild Rice Chowder
+	                      </a>
+	                    </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>    				
+              </td>
+              <td bgcolor="white" width="135" style="height:215px; margin-right:12px; margin-left:12px; margin-bottom:25px;">
+                <table border="0" cellpadding="0" cellspacing="0" >
+                  <tr>
+                    <td>
+                      <h3 style="display:block; font-size:13px; color:#A6A6A6; padding-left:16px; padding-top:34px;
+                                 font-family: Helvetica, Arial, sans-serif;">
+                        Baking
+                      </h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a style="text-decoration:none; color:#c8ba23;" href="http://www.bettycrocker.com">
+                        <img style="border-style:none;" src="http://exiastore.com.mx/images2/logo-bettycrocker.jpg" alt="AllRecipes.com"/>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul style="width:88px;">
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.bettycrocker.com">
+	                        Southwest Chicken Skillet
+	                      </a>
+	                    </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.bettycrocker.com">
+	                        Hearty Chicken Pot Pie
+	                      </a>
+	                    </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.bettycrocker.com">
+	                        Tyhme-Roasted Chicken
+	                      </a>
+	                    </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td bgcolor="white" width="135" style="height:215px; margin-right:12px; margin-left:12px; margin-bottom:25px;">
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td>
+                      <h3 style="display: block; font-size:13px; color:#A6A6A6; padding-left:16px; padding-top:60px;
+                                 font-family: Helvetica, Arial, sans-serif;">
+                        Restaurant
+                      </h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a style="text-decoration:none; color:#c8ba23;" href="http://www.copykat.com">
+                        <img style="border-style:none;" src="http://exiastore.com.mx/images2/logo-copykat.jpg" alt="AllRecipes.com" />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul style="width:88px;" >
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.copykat.com">
+	                        Picahilly Sweet Carrot Pudding
+	                      </a>
+	                    </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.copykat.com">
+	                        Sweet Potatoes and Apple Casserole
+	                      </a>
+	                    </li>
+                        <li style="list-style:none; color:#c8ba23; font-size:10px; padding:5px 0 5px 0; margin:0;
+                                   border-bottom-width:thin; border-bottom-style:solid; border-bottom-color:#CCC;">
+                          <a style="text-decoration:none; color:#c8ba23;" href="http://www.copykat.com">
+	                        Saltgrass Steakhouse Garlic Mashed Potatoes
+	                      </a>
+	                    </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" height="6" >
+                <img src="http://exiastore.com.mx/images2/bg-content-b.png" />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

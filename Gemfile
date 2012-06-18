@@ -2,16 +2,25 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.2.3'
 
+# Pagination plugin
+gem 'will_paginate'
+
 # gem 'pg' PostgreSQL driver
 gem 'pg'
 
 # RJS include
 gem 'prototype-rails'
 
+# Ambethia Recaptcha
+gem "recaptcha", :require => "recaptcha/rails"
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+# File attachment library for Active Record
+gem "paperclip", "~> 3.0"
+
+#gem 'sqlite3'
 
 # Use unicorn as the web server
 # gem 'unicorn'

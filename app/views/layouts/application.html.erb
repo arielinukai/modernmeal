@@ -7,8 +7,9 @@
   <!-- Scripts -->
   <%= javascript_include_tag "prototype" %>
   <%= javascript_include_tag "jquery-1.4.4.min" %>
-  <%= javascript_include_tag "jquery.main.js" %>
-  <%= javascript_include_tag "global" %>
+  <%= javascript_include_tag "jquery.cookie" %>
+  <%= javascript_include_tag "jquery.main" %>
+  <%= javascript_include_tag "autosize" %>
   <%= javascript_include_tag "application" %>
   <%= javascript_include_tag "controls" %>
   <%= javascript_include_tag "dragdrop" %>
@@ -27,19 +28,59 @@
 						<h3>my ModernMeal</h3>
 					</div>
 					<ul class="sub-nav">
-						<li><a href="profile.shtml"><span>Registration</span></a></li>
+						<% if signed_in? %>
+						<li class="active">
+						  	<%= link_to home_path do %>
+							 <span>my profile</span>
+							<% end %>
+						</li>
+						<li><a href="#"><span>my recipes</span></a></li>
+						<li><a href="#"><span>add recipes</span></a></li>
+						<li><a href="#"><span>weekly planner</span></a></li>
+						<li><a href="#"><span>grocery list</span></a></li>
+                        <li><a href="#"><span>our partners</span></a></li>
+						<% else %>
+						<li><a href="/signup"><span>Registration</span></a></li>
+						<% end %>
 					</ul>
-					<form action="#" class="invite">
+					<%= form_for(:invite, :html => { :class => "invite" }, :url => { :controller => 'email', :action => 'invite' } ) do |f| %> 
 						<fieldset>
 						<h4>Invite a friend to MODERNMEAL</h4>
 							<div class="row">
-								<span class="input-holder"><input type="text" class="text" value="email address" /></span>
+								<span class="input-holder">
+								  <%= f.text_field :email, :class => 'text' %>
+								</span>
 							</div>
 							<div class="row">
-								<input type="submit" class="submit" value="invite" />
+								<a href="#" class="submit">INVITE</a>
+							</div>
+							<div class="message-status">
 							</div>
 						</fieldset>
-					</form>
+					<% end %>
+					<script type="text/javascript">
+					  jQuery.noConflict();
+					  jQuery('.row.submit').click(function (event) {
+						event.preventDefault();
+						jQuery('.message-status').html('<img src="/images/loading.gif"  />');
+					    var surl  =  "http://localhost:3000/email/invite";
+					    var semail = jQuery('#invite_email').val();
+							jQuery.ajax({
+								type: 'POST',
+								url: surl,
+								data: { email: semail },
+								dataType: 'json',
+								success: function(result) {
+								  jQuery.each(result, function(key, val) {
+								    jQuery('.message-status').html(val);
+								  });
+								},
+								error: function() {
+									jQuery('.message-status').html('Internal Server error.')
+								}
+								});
+					  });
+					</script>
 				</div>
 			</div>
 		</div>

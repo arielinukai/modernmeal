@@ -1,0 +1,59 @@
+<div class="content-holder">
+	<div class="content-t">&nbsp;</div>
+	<div id="content"> <img src="/images/gradient.gif" alt="" class="gradient" />
+	  <div class="block-container">
+	    <div class="review-block">
+	      <%= form_for(:user, :html => { :class => "recipe-form" } ) do |f| %> 
+	        <fieldset>
+	          <div class="recipe-box">
+	            <div class="form-holder">
+		          <div class="row">
+			        <h2 class="trigger">Change your password</h2>
+			      </div>
+			      <div class="flash-default">
+				    <% flash.each do |key, value| %>
+				      <div class="flash <%= key %>"><%= value %></div>
+				    <% end %>
+				  </div>
+				  <br/>
+	              <div class="row">
+	                <%= f.label :password %>
+	                <div class="input-section"> 
+		              <span class="left">&nbsp;</span> 
+		              <span class="input-holder">
+	                    <%= f.password_field :password, :size => 23, :class => 'text' %> 
+	                  </span> 
+	                  <span class="right">&nbsp;</span> 
+	                </div>
+                  </div>
+                  <div class="row">
+	                <%= f.label :confirmation %>
+	                <div class="input-section"> 
+		              <span class="left">&nbsp;</span> 
+		              <span class="input-holder">
+	                    <%= f.password_field :password_confirmation, :size => 23, :class => 'text' %> 
+	                  </span> 
+	                  <span class="right">&nbsp;</span> 
+	                </div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          <% end %> 
+	      <div class="box-container">
+	        <div class="save-links">
+	          <div class="link-save-container"><a href="#" class="save">SAVE</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+	<div class="content-b">&nbsp;</div>
+</div>
+<script type="text/javascript">
+  jQuery.noConflict();
+  jQuery('.save').click(function (event) {
+	event.preventDefault();
+    jQuery(".recipe-form").submit();  
+  });
+</script>

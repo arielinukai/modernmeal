@@ -1,0 +1,116 @@
+<div class="content-holder">
+	<div class="content-t">&nbsp;</div>
+	<div id="content">
+		<img src="/images/gradient.gif" alt="" class="gradient" />
+		<div class="block-container">
+			<div class="detail-section">
+				<h2 class="heading">Identify your account</h2>
+				<div class="recipe-detail-box">
+					<div class="recipe-detail">
+						<br/>
+						<strong class="recipe-heading">Information</strong>
+						<br/>
+																
+																		<p>Please fill out this form if you are unable to remember your current password. If you're trying to report a different issue, contact the support team to find the right form and learn more about common questions.</p>
+																	
+																
+						<br/>
+						<div class="name-block">
+							<strong class="name">Enter your email account:</strong>
+							<img src="/images/image7.jpg" alt="" width="49" height="15" />
+						</div>
+						<br/>
+						<%= form_for :user, :html => { :class => "top-bar-form"}  do |f| %> 
+							<fieldset>
+								<div class="input-section">
+									<span class="leftside">&nbsp;</span>
+									<span class="input-holder">
+								      <%= f.text_field :email, :class => "text", :value => "enter your email address" %>
+									</span>
+									<span class="rightside">&nbsp;</span>
+									<br/>
+								</div>
+								<br/><br/><br/>
+								<%= f.submit "SEND", :class => "submit" %> 
+							</fieldset>
+						<% end %>
+						<br/>
+						<p>
+							<% flash.each do |key, value| %>
+						      <div class="flash <%= key %>"><%= value %></div><br/>
+						    <% end %>
+						</p>
+					</div>
+					<div class="info-section">
+						<div class="image-box">
+							<img src="/images/image9.jpg" alt="" width="234" height="234" />
+						</div>
+						<div class="total-box">
+							<h3>Nutrition Facts</h3>
+							<dl class="info-list">
+								<dt>Serving Size:</dt>
+								<dd>1 serving (341g)</dd>
+								<dt>Recipe Makes:</dt>
+								<dd>4 Servings</dd>
+							</dl>
+							<dl class="info-list">
+								<dt>Calories:</dt>
+								<dd>510</dd>
+								<dt>Calories from Fat:</dt>
+								<dd>152 (30%)</dd>
+							</dl>
+							<div class="list-holder">
+								<dl>
+									<dt>Amt Per Serving</dt>
+									<dd>%DV</dd>
+								</dl>
+							</div>
+							<div class="total-list">
+								<ul>
+									<li>
+										<strong class="alignleft">Total Fat 16.9g</strong>
+										<span class="alignright">22%</span>
+										<ul>
+											<li>
+												<span class="alignleft">Saturated Fat 2.7g</span>
+												<span class="alignright">13%</span>
+											</li>
+											<li>Monosaturated Fat 10.4g</li>
+											<li>Polyunsaturated Fat 2.7g</li>
+											<li>Trans fat 1g</li>
+										</ul>
+									</li>
+									<li>
+										<strong class="alignleft">Cholesterol 414.4mg</strong>
+										<span class="alignright">127%</span>
+									</li>
+									<li>
+										<strong class="alignleft">Sodium 1059mg</strong>
+										<span class="alignright">37%</span>
+									</li>
+									<li>
+										<strong class="alignleft">Potassium 443.5mg</strong>
+										<span class="alignright">12%</span>
+									</li>
+									<li>
+										<strong class="alignleft">Total Carboyhdrate 35.3g</strong>
+										<span class="alignright">10%</span>
+										<ul>
+											<li>Dietary Fiber 2.2g</li>
+											<li>Sugars, other 33.2g</li>
+										</ul>
+									</li>
+									<li>
+										<strong class="alignleft">Protein 51.1g</strong>
+										<span class="alignright">73%</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-b">&nbsp;</div>
+</div>

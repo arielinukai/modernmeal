@@ -1,0 +1,63 @@
+<div class="content-holder">
+	<div class="content-t">&nbsp;</div>
+	<div id="content"> <img src="/images/gradient.gif" alt="" class="gradient" />
+	  <div class="block-container">
+	    <div class="review-block">
+	      <%= form_for(@user, :html => { :class => "recipe-form", :multipart => true } ) do |f| %> 
+	        <%= render 'shared/error_messages', :object => f.object %>
+	        <fieldset>
+	          <div class="recipe-box">
+	            <div class="form-holder">
+		          <div class="row">
+			        <h2 class="trigger">Upload your picture</h2>
+			      </div>
+			      <div class="row">	<div class="image"> 
+		              <%= image_tag @user.avatar.url(:thumb) %>
+		              <br />
+		            </div></div>
+	              <div class="row">
+	                <%= f.label :name %>
+	                <div class="input-section"> 
+		              <span class="left">&nbsp;</span> 
+		              <span class="input-holder">
+	                    <%= f.text_field :name, :size => 23, :readonly => true, :class => 'text' %> 
+	                  </span> 
+	                  <span class="right">&nbsp;</span> 
+	                </div>
+                  </div>
+                  <div class="row">
+	                <%= f.label :last_name %>
+	                <div class="input-section"> 
+		              <span class="left">&nbsp;</span> 
+		              <span class="input-holder">
+	                    <%= f.text_field :lastname, :size => 23, :readonly => true, :class => 'text' %> 
+	                  </span> 
+	                  <span class="right">&nbsp;</span> 
+	                </div>
+                  </div>
+                  <div class="row">
+	                <br/>
+	                <%= f.label :new_picture %>
+	                <%= f.file_field :avatar %>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          <% end %> 
+	      <div class="box-container">
+	        <div class="save-links">
+	          <div class="link-save-container"><a href="#" class="save">UPLOAD</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+	<div class="content-b">&nbsp;</div>
+</div>
+<script type="text/javascript">
+  jQuery.noConflict();
+  jQuery('.save').click(function (event) {
+	event.preventDefault();
+    jQuery(".recipe-form").submit();  
+  });
+</script>

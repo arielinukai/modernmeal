@@ -1,0 +1,174 @@
+<div class="content-holder">
+	<div class="content-t">&nbsp;</div>
+	<div id="content">
+		<img src="/images/gradient.gif" alt="" class="gradient" />
+		<div class="block-container">
+			<div class="top-section">
+				<form action="#" class="top-bar-form">
+					<fieldset>
+						<a href="#" class="search-button">&nbsp;</a>
+						<div class="input-section">
+							<span class="leftside">&nbsp;</span>
+							<span class="input-holder"><input type="text" class="text long" value="search for recipes" /></span>
+							<span class="rightside">&nbsp;</span>
+						</div>
+						<input type="submit" class="submit" value="SEARCH MY RECIPES" />
+					</fieldset>
+				</form>
+			</div>
+			<div class="profile-section">
+				<%= image_tag @user.avatar.url(:thumb) %>
+				<span class="sub-text">Welcome back, <%= current_user.name %>! <a href="/signout" class="link">(log out)</a></span>
+				<div class="profile-settings">
+					<p>Edit Your Profile:</p>
+					<ul class="settings-list">
+						<li><%= link_to 'Change your password', change_user_path(@user.id)%></li>
+						<li><%= link_to 'Edit personal info', edit_user_path(@user.id)%></li>
+						<li><%= link_to 'Change picture', change_picture_user_path(@user.id)%></li>
+					</ul>
+				</div>
+			</div>
+			<div class="profile-heading">
+				<h2>My Dashboard</h2>
+			</div>
+			<div class="threecolumns">
+				<div class="column">
+					<h3>MY WEEK AHEAD</h3>
+					<ul class="week-list">
+						<li>
+							<span class="day">Monday</span>
+							<strong class="choose"><a href="#">choose meal</a></strong>
+						</li>
+						<li>
+							<span class="day">Tuesday</span>
+							<strong class="choose"><a href="#">choose meal</a></strong>
+							<ul>
+								<li>Turkey Curry Sliders</li>
+							</ul>
+						</li>
+						<li>
+							<span class="day">Wednesday</span>
+							<strong class="choose"><a href="#">choose meal</a></strong>
+							<ul>
+								<li>Roasted Cauliflower Salad</li>
+							</ul>
+						</li>
+						<li>
+							<span class="day">Thursday</span>
+							<strong class="choose"><a href="#">choose meal</a></strong>
+						</li>
+						<li>
+							<span class="day">Friday</span>
+							<strong class="choose"><a href="#">choose meal</a></strong>
+						</li>
+						<li>
+							<span class="day">Saturday</span>
+							<strong class="choose"><a href="#">choose meal</a></strong>
+						</li>
+						<li>
+							<span class="day">Sunday</span>
+							<strong class="choose"><a href="#">choose meal</a></strong>
+						</li>
+					</ul>
+					<a href="#" class="edit">edit</a>
+				</div>
+				<div class="column long">
+					<h3>RECENTLY ADDED RECIPES</h3>
+					<ul class="recipe-list">
+						<li>
+							<img src="/images/image11.jpg" alt="" width="38" height="30" />
+							<span class="text">Cran-Apple-Onion Open-Face Turkey Sammies</span>
+						</li>
+						<li>
+							<img src="/images/image12.jpg" alt="" width="37" height="29" />
+							<span class="text">Turkey Curry Sliders With Roasted Tomatoes and Eggplant</span>
+						</li>
+						<li>
+							<img src="/images/image11.jpg" alt="" width="38" height="30" />
+							<span class="text">Spinach-Feta Rice Pilaf, Sliced Steak with Oregano Sauce</span>
+						</li>
+						<li>
+							<img src="/images/image12.jpg" alt="" width="37" height="29" />
+							<span class="text">Roasted Cauliflower Salad</span>
+						</li>
+						<li>
+							<img src="/images/image11.jpg" alt="" width="38" height="30" />
+							<span class="text">talian Sub Stoup and Garlic Toast</span>
+						</li>
+					</ul>
+					<a href="#" class="edit">edit</a>
+				</div>
+				<div class="column short">
+					<h3>TODAY’S GROCERY LIST</h3>
+					<div class="text-holder">
+						
+						<span class="sub-text">List for 12/1/10</span>
+						<ul class="ingr-list">
+							<li>Wheat bread buns <a href="#" class="delete">delete</a></li>
+							<li>1/2 lb of Turkey <a href="#" class="delete">delete</a></li>
+							<li>Curry <a href="#" class="delete">delete</a></li>
+							<li>Salt <a href="#" class="delete">delete</a></li>
+							<li>Olive Oil <a href="#" class="delete">delete</a></li>
+						</ul>
+					</div>
+					<a href="#" class="edit">edit</a>
+				</div>
+			</div>
+			<div class="ad-section">
+				<h3 class="ad-title">Quicklinks</h3>
+				<ul class="ad-list">
+					<li><a href="#"><img src="/images/ad-image.gif" alt="" width="234" height="60" /></a></li>
+					<li><a href="#"><img src="/images/ad-image.gif" alt="" width="234" height="60" /></a></li>
+				</ul>
+			</div>
+			<div class="columns-section">
+				<div class="left-column">
+					<h4>Manage Family Favorites</h4>
+                    <ul>
+                    <li><a href="#">Mom</a></li>
+                    <li><a href="#">Dad</a></li>
+                    <li><a href="#">Sister</a></li>
+                    <li><a href="#">Brother</a></li>
+                    </ul>
+					<form action="#" class="text-form">
+						<fieldset>
+						</fieldset>
+					</form>
+				</div>
+				<div class="central-column">
+					<div class="title-holder">
+						<h4>Featured Recipes</h4>
+					</div>
+					<ul class="featured-list">
+						<li><a href="#">Cran-Apple-Onion Open-Face Turkey Sammies</a></li>
+						<li><a href="#">Turkey Curry Sliders With Roasted Tomatoes and Eggplant</a></li>
+						<li><a href="#">Spinach-Feta Rice Pilaf, Sliced Steak with Oregano Sauce</a></li>
+						<li><a href="#">Roasted Cauliflower Salad</a></li>
+					</ul>
+				</div>
+				<div class="right-column">
+					<h4>My Grocery Stores</h4>
+					<div class="address-block">
+						<h5>Publix Super Market</h5>
+						<address>
+							<span>2873 South Orange Avenue,</span>
+							<span>Orlando</span>
+							<span>(407) 872-0395</span>
+							<span><a href="#">Edit Store</a></span>
+						</address>
+					</div>
+					<div class="address-block">
+						<h5>Publix Super Market</h5>
+						<address>
+							<span>1400 E Colonial</span>
+							<span>Orlando</span>
+							<span>(407) 896-8154</span>
+							<span><a href="#">Edit Store</a></span>
+						</address>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-b">&nbsp;</div>
+</div>

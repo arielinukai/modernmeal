@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120613143114) do
+ActiveRecord::Schema.define(:version => 20120615143933) do
 
   create_table "users", :force => true do |t|
     t.string   "name"
@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(:version => 20120613143114) do
     t.string   "gender"
     t.date     "birthday"
     t.string   "email"
-    t.boolean  "change_password_flag"
+    t.string   "change_password_flag"
     t.string   "address"
     t.string   "city"
     t.integer  "zip_code"
@@ -28,6 +28,11 @@ ActiveRecord::Schema.define(:version => 20120613143114) do
     t.datetime "updated_at",           :null => false
     t.string   "salt"
     t.string   "encrypted_password"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
+    t.string   "state"
   end
 
 end
