@@ -9,7 +9,9 @@
 						<a href="#" class="search-button">&nbsp;</a>
 						<div class="input-section">
 							<span class="leftside">&nbsp;</span>
-							<span class="input-holder"><input type="text" class="text long" value="search for recipes" /></span>
+							<span class="input-holder">
+							  <input type="text" class="text long" value="search for recipes" />
+							</span>
 							<span class="rightside">&nbsp;</span>
 						</div>
 						<input type="submit" class="submit" value="SEARCH MY RECIPES" />
@@ -17,14 +19,14 @@
 				</form>
 			</div>
 			<div class="profile-section">
-				<%= image_tag @user.avatar.url(:thumb) %>
+				<%= image_tag current_user.avatar.url(:thumb) %>
 				<span class="sub-text">Welcome back, <%= current_user.name %>! <a href="/signout" class="link">(log out)</a></span>
 				<div class="profile-settings">
 					<p>Edit Your Profile:</p>
 					<ul class="settings-list">
-						<li><%= link_to 'Change your password', change_user_path(@user.id)%></li>
-						<li><%= link_to 'Edit personal info', edit_user_path(@user.id)%></li>
-						<li><%= link_to 'Change picture', change_picture_user_path(@user.id)%></li>
+						<li><%= link_to 'Change your password', change_user_path(current_user.id)%></li>
+						<li><%= link_to 'Edit personal info', edit_user_path(current_user.id)%></li>
+						<li><%= link_to 'Change picture', change_picture_user_path(current_user.id)%></li>
 					</ul>
 				</div>
 			</div>

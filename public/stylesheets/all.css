@@ -1068,13 +1068,22 @@ form,fieldset{
 	padding:0 16px;
 	font-size:14px;
 }
-#sidebar {
-	width:173px;
+#sidebar{
+	width:190px;
 	float:left;
-	background:url(/images/bg-sidebar.png) no-repeat;
-	height:391px;
-	padding:27px 11px 0 6px;
+	color:#ffffff;
+	height: auto;
+	/*background:url(../images/bg-sidebar.png) no-repeat;*/
+	/*height:391px;*/
+	/*padding:27px 11px 0 6px;*/
 }
+#sidebar-container{
+  /*background-color: #ffffff;*/
+  background: url("../images/bg-sidebar-upper.png") no-repeat scroll 0 0 #FFFFFF;
+  width: 173px;
+  padding:27px 0px 40px 12px;
+}
+
 
 #sidebar .title-holder{
 	overflow:hidden;
@@ -2658,6 +2667,14 @@ form,fieldset{
 }
 
 .message-status {
+	height: 3em;
 	padding-top: 10px;
 	text-align:center;
+	color: #A6A6A6;
+}
+
+.message-status img {
+	position: relative;
+	right: -18px;
+	top:-52px;
 }
