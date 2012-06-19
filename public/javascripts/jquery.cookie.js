@@ -7,12 +7,12 @@
 * http://www.opensource.org/licenses/mit-license.php
 * http://www.opensource.org/licenses/GPL-2.0
 */
-(function($) {
-    $.cookie = function(key, value, options) {
+(function(jQuery) {
+    jQuery.cookie = function(key, value, options) {
 
         // key and at least value given, set cookie...
         if (arguments.length > 1 && (!/Object/.test(Object.prototype.toString.call(value)) || value === null || value === undefined)) {
-            options = $.extend({}, options);
+            options = jQuery.extend({}, options);
 
             if (value === null || value === undefined) {
                 options.expires = -1;

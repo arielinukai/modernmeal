@@ -1,0 +1,306 @@
+	
+	<script type="text/javascript" src="/javascripts/review.recipe.js"></script>
+
+	<input type="hidden" id="recipeData" name="recipeData" value="<%= @recipe %>"/>
+
+
+	<div class="content-holder">
+		<div class="content-t">&nbsp;</div>
+		<div id="content"> <img src="/images/gradient.gif" alt="" class="gradient" />
+			<div class="block-container">
+				<div class="review-block">
+					<h2 class="trigger">Review Your Recipe</h2>
+
+					<!--FORM-->
+					<form method="POST" action="/recipes" id="recipeSubmit" class="recipe-form">
+					<fieldset>
+						<div class="recipe-box">
+								<div class="image-box"> <img src="/images/add-a-picture.gif" alt="" width="91" height="117" /><br />
+									<input type="file" size="8" />
+								</div>
+								<div class="form-holder">
+									<div class="row">
+										<label for="name">Recipe Name:</label>
+										<div class="input-section"> <span class="left">&nbsp;</span> <span class="input-holder">
+											<input type="text" class="text" value="" name="name" id="name" />
+											</span> <span class="right">&nbsp;</span> </div>
+										</div>
+									<div class="row">
+										<label for="category">Category:</label>
+										<div class="input-section"> <span class="left">&nbsp;</span> <span class="input-holder">
+											<input type="text" class="text" value="" name="category" id="category" />
+											</span> <span class="right">&nbsp;</span> </div>
+										</div>
+									<div class="row">
+										<label for="ingr">Key Ingredients:</label>
+										<div class="input-section"> <span class="left">&nbsp;</span> <span class="input-holder">
+											<input type="text" class="text" value="" name ="keyIngredients" id="keyIngredients" />
+											</span> <span class="right">&nbsp;</span> </div>
+										</div>
+									<div class="row">
+										<label for="size">Serving Size:</label>
+										<div class="input-section"> <span class="left">&nbsp;</span> <span class="input-holder">
+											<input type="text" class="text" value="" name="servingSize" id="servingSize" />
+											</span> <span class="right">&nbsp;</span> </div>
+										</div>
+									<div class="row">
+										<label for="cost">Cost of Ingredients:</label>
+										<div class="input-section"> <span class="left">&nbsp;</span> <span class="input-holder">
+											<input type="text" class="text" value="" name="costOfIngredientsText" id="costOfIngredientsText" />
+											</span> <span class="right">&nbsp;</span> </div>
+										</div>
+									<div class="row">
+										<label for="type">Cuisine Type:</label>
+										<div class="input-section"> <span class="left">&nbsp;</span> <span class="input-holder">
+											<input type="text" class="text" value="" name="cuisineType" id="cuisineType" />
+											</span> <span class="right">&nbsp;</span> </div>
+										</div>
+									<div class="row">
+										<label for="meal">Meal Type:</label>
+										<div class="input-section"> <span class="left">&nbsp;</span> <span class="input-holder">
+											<input type="text" class="text" value="" name="mealType" id="mealType" />
+											</span> <span class="right">&nbsp;</span> </div>
+										</div>
+									<div class="row">
+										<label for="prep">Prep Time:</label>
+										<div class="input-section"> <span class="left">&nbsp;</span> <span class="input-holder">
+											<input type="text" class="text" value="" name="preparationTimeText" id="preparationTimeText" />
+											</span> <span class="right">&nbsp;</span> </div>
+										</div>
+									<div class="row">
+										<label for="total">Total Time:</label>
+										<div class="input-section"> <span class="left">&nbsp;</span> <span class="input-holder">
+											<input type="text" class="text" value="" name="totalTimeText" id="totalTimeText" />
+											</span> <span class="right">&nbsp;</span> </div>
+										</div>
+									<div class="row">
+										<label for="wine">Add a Wine?:</label>
+										<div class="input-section"> <span class="left">&nbsp;</span> <span class="input-holder">
+											<input type="text" class="text" id="addWine" name="addWine" />
+											</span> <span class="right">&nbsp;</span> </div>
+										</div>
+									<div class="row">
+										<label for="source">Source:</label>
+										<div class="input-section"> <span class="left">&nbsp;</span> <span class="input-holder">
+											<input type="text" class="text" value="" id="source" />
+											<!--
+											<select name="source" class="text" id="source">
+							<option value="none">-</option>
+							<option value="allrecipes.com">allrecipes.com</option>
+							<option value="foodnetwork.com">foodnetwork.com</option>
+							<option value="myrecipes.com">myrecipes.com</option>
+							<option value="epicurious.com">epicurious.com</option>
+							<option value="cooks.com">cooks.com</option>
+							<option value="kitchendaily.com">kitchendaily.com</option>
+							<option value="foodandwine.com">foodandwine.com</option>
+							<option value="cookinglight.com">cookinglight.com</option>
+							<option value="food.com">food.com</option>
+							<option value="copykat.com">copykat.com</option>
+							<option value="simplyrecipes.com">simplyrecipes.com</option>
+							<option value="bettycrocker.com">bettycrocker.com</option>
+							</select>
+							-->
+
+											</span> <span class="right">&nbsp;</span> </div>
+										</div>
+									</div>
+								<div class="link-container"> <a href="#" class="add"> <span class="leftbar">&nbsp;</span> <span class="center">ADD SUB RECIPE</span> <span class="rightbar">&nbsp;</span> </a> </div>
+								</div>
+
+
+								<!-- COLUMNS -->
+
+								<!-- 
+
+					SAMPLE ROW
+					<div class="row">
+										<div class="input-section"> 
+											<span class="left">&nbsp;</span> 
+											<span class="input-holder">
+													<input type="text" class="text" value="" />
+												</span> 
+												<span class="right">&nbsp;</span> 
+										</div>
+									</div>
+								-->
+
+							<div class="form-columns" id="form-columns">
+								
+								<div class="quantity-column" id="quantity-column">
+									<h3 class="title">Qty</h3>
+									<!-- Insert rows here -->
+									</div>
+								
+								<div class="ingredient-column" id="ingredient-column">
+									<h3 class="title">Ingredient</h3>
+									<!-- Insert rows here -->
+									</div>
+
+								<div class="comments-column" id="comments-column">
+									<h3 class="title">Comments</h3>
+									<!-- Insert rows here -->
+									</div>
+								
+								</div>
+
+								<!-- END COLUMNS -->
+							</fieldset>
+					 
+
+
+							<div class=".aux-add-div"></div>
+						<!-- BEGIN NEW INGREDIENT -->
+
+						<div class="block-container recipe-form" >
+				            <div class="review-block" style="width:100%">
+				                <div id="recipe-form" >
+
+				                	<h3>Add New Ingredient</h3>
+
+				                	<div class="headNames" style="clear:both;">
+				                  		<span style="display:block;width: 71px;float:left; padding-left: 5px;">Quantity</span>
+				                  		<span style="display:block;width: 89px;float:left;">Type</span>
+				                  		<span style="display:block;width: 141px;float:left;">Ingredient</span>
+				                  		<span style="display:block;width: 98px;float:left;">Comments</span>                 
+				                	</div>
+
+				                	<br/>
+				                	<br/>
+
+
+				                	<div>
+				                	<!-- INPUT CONTAINER -->
+				                		<!-- QUANTITY -->
+				                		<div style="float:left;padding-right:15px;" >
+				                  			<div class="input-section">	                    
+				                      			<select name="addQty" id="addQty" size="40px">
+				                      				<option value="" selected="selected">&nbsp;</option>
+				                        			<option value="1/2">1/4&nbsp;&nbsp;&nbsp;</option>
+				                        			<option value="1/2">1/2</option>
+				                        			<option value="1/2">3/4</option>
+				                        			<option value="1">1</option>
+				                        			<option value="2">2</option>
+				                        			<option value="3">3</option>
+				                        			<option value="4">4</option>
+				                        			<option value="4">5</option>
+				                      			</select>
+				                    		</div>
+				                		</div>
+
+				                		<!-- TYPE -->
+				                		<div style="float:left;padding-right:15px;" >
+				                  			<select name="addType" id="addType">
+				                  				<option value="" selected="selected">&nbsp;&nbsp;</option>
+				                        		<option value="cups">Cups</option>
+				                        		<option value="quarts">Quarts</option>
+				                        		<option value="packets">Packets</option>
+				                        		<option value="bags">Bags</option>
+				                        		<option value="tsp">tsp</option>
+				                        		<option value="tbsp">tbsp</option>
+				                        		<option value="pieces">Pieces</option>
+				                     	 	</select>
+				                  		</div>
+
+				                  		<!-- INGREDIENT NAME -->
+				                  		<div  style="float:left;padding-right:15px;" >
+							      			<div class="input-section">
+							        			<span class="left">&nbsp;</span>
+							        			<span class="input-holder">
+							           				<input type="text" class="text" id="addIngredient" style="width:110px;" value=""/>
+							        			</span>
+							        			<span class="right">&nbsp;</span>
+							      			</div>
+							    		</div>
+
+							    		<!-- COMMENTS -->
+							    		<div style="float:left;padding-right:10px;" >
+							      			<div class="input-section">
+							        			<span class="left">&nbsp;</span>
+							        			<span class="input-holder">
+							           				<input type="text" class="text" id="addComment" style="width:150px;" value=""/>
+							        			</span>
+							        			<span class="right">&nbsp;</span>
+							      			</div>
+							    		</div>
+
+							    		<!-- ADD BUTTON -->
+							    		<div class="link-container" style="float:left;" >
+							     			<a href="javascript:addNewElement()" idd="addNewIngredient" class="add">
+							      				<span class="leftbar">&nbsp;</span>
+							      				<span class="center">
+							         				<span style="line-height:2.5em;color:white;" >Add</span>
+							      				</span>
+							      				<span class="rightbar">&nbsp;</span>  
+							      			</a>
+							    		</div>
+
+				                	<!-- END INPUT CONTAINER -->
+				                	</div>
+
+				                </div>
+				            </div>
+				        </div>        
+				        <!-- END NEW INGREDIENT -->
+
+					 <br/>
+					 <br/>
+					 <br/>
+					<div class="box-container">
+						<div class="info-container">
+							<h3>Cooking Directions</h3>
+							<div class="recipe-description">
+								<div class="recipe-description-t">&nbsp;</div>
+								<div id="description-box" class="description-box">
+									<!--<ol class="recipe-list">
+										<li></li>
+										<li></li>
+										<li></li>
+										</ol>-->																		
+										
+									</div>
+								<div class="recipe-description-b">&nbsp;</div>
+								</div>
+							</div>
+						<div class="total-box">
+							<h3>Nutrition Facts</h3>
+							<p id="nutrition"></p>
+							</div>
+
+					<!-- ETRA FIELDS NOT DISPLAYED -->
+
+					<input type="hidden" id="numIngredients" name="numIngredients"/>
+					<input type="hidden" id="preparationTime" name="preparationTime"/>
+					<input type="hidden" id="servings" name="servings"/>
+					<input type="hidden" id="servingsComments" name="servingsComments"/>
+					<input type="hidden" id="totalTime" name="totalTime"/>
+					<input type="hidden" id="totalTimeText" name="totalTimeText"/>
+					<input type="hidden" id="cookTime" name="cookTime"/>
+					<input type="hidden" id="cookTimeText" name="cookTimeText"/>
+					<input type="hidden" id="costOfIngredientsDollars" name="costOfIngredientsDollars"/>
+					<input type="hidden" id="costOfIngredientsCents" name="costOfIngredientsCents"/>
+					<input type="hidden" id="costOfIngredientsText" name="costOfIngredientsText"/>
+					<input type="hidden" id="nutritionalInformation" name="nutritionalInformation"/>
+					<input type="hidden" id="text" name="text"/>
+					<input type="hidden" id="comments" name="comments"/>
+					<input type="hidden" id="directions" name="directions"/>
+
+					<!-- END EXTRA FIELDS-->
+
+					</form>
+
+						<div class="save-links">
+							<div class="link-container"> 
+								<a href="javascript:document.forms['recipeSubmit'].submit()" id="aSubmit" class="add"> 
+									<span class="leftbar">&nbsp;</span> 
+									<span id="spanAdd" class="center">SAVE</span> 
+									<span class="rightbar">&nbsp;</span> 
+								</a> 
+								<a href="grocery-home.shtml" class="save">SAVE &amp; ADD TO GROCERY LIST</a> 
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="content-b">&nbsp;</div>
+	</div>

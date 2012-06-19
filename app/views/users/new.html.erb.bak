@@ -1,0 +1,104 @@
+<div class="content-holder">
+	<div class="content-t">&nbsp;</div>
+	<div id="content"> <img src="/images/gradient.gif" alt="" class="gradient" />
+	  <div class="block-container">
+	    <div class="review-block">
+	      
+	      <form action="#" class="recipe-form">
+	        <fieldset>
+	          <div class="recipe-box">
+	            <div class="image-box"> <img src="/images/add-a-picture.gif" alt="" width="91" height="117" /><br />
+	              <input type="file" size="8" />
+	            </div>
+	            <div class="form-holder">
+		          <div class="row">
+			        <h2 class="trigger">User Registration</h2>
+			      </div>
+	              <div class="row">
+	                <label for="name">Name:</label>
+	                <div class="input-section"> <span class="left">&nbsp;</span> <span class="input-holder">
+	                  <input type="text" class="text" id="name" />
+	                  </span> <span class="right">&nbsp;</span> </div>
+                  </div>
+                  <div class="row">
+	                <label for="name">Last Name:</label>
+	                <div class="input-section"> <span class="left">&nbsp;</span> <span class="input-holder">
+	                  <input type="text" class="text" id="name" />
+	                  </span> <span class="right">&nbsp;</span> </div>
+                  </div>
+	              <div class="row">
+	                <label for="category">Gender:</label>
+	                <div class="input-section"> <span class="left">&nbsp;</span> <span class="input-holder">
+	                  <input type="text" class="text" value="" id="name" />
+	                  </span> <span class="right">&nbsp;</span> </div>
+                  </div>
+	              <div class="row">
+	                <label for="ingr">Birthday:</label>
+	                <div class="input-section"> <span class="left">&nbsp;</span> <span class="input-holder">
+	                  <input type="text" class="text" value="" id="name" />
+	                  </span> <span class="right">&nbsp;</span> </div>
+                  </div>
+                  <div class="row">
+	                <br/><br/>
+			        <h2 class="trigger">Select and ID and password</h2>
+			      </div>
+			      <div class="row">
+	                <label for="ingr">Birthday:</label>
+	                <div class="input-section"> <span class="left">&nbsp;</span> <span class="input-holder">
+	                  <input type="text" class="text" value="" id="name" />
+	                  </span> <span class="right">&nbsp;</span> </div>
+                  </div>
+	              <div class="row">
+	                <label for="size">Password:</label>
+	                <div class="input-section"> <span class="left">&nbsp;</span> <span class="input-holder">
+	                  <input type="text" class="text" value="" id="name" />
+	                  </span> <span class="right">&nbsp;</span> </div>
+                  </div>
+	              <div class="row">
+	                <label for="cost">Confirmation:</label>
+	                <div class="input-section"> <span class="left">&nbsp;</span> <span class="input-holder">
+	                  <input type="text" class="text" value="" id="name" />
+	                  </span> <span class="right">&nbsp;</span> </div>
+                  </div>
+                  <div class="row">
+	                <br/><br/>
+			        <h2 class="trigger">General Information</h2>
+			      </div>
+	              <div class="row">
+	                <label for="type">Address:</label>
+	                <div class="input-section"> <span class="left">&nbsp;</span> <span class="input-holder">
+	                  <input type="text" class="text" value="" id="name" />
+	                  </span> <span class="right">&nbsp;</span> </div>
+                  </div>
+	              <div class="row">
+	                <label for="meal">City:</label>
+	                <div class="input-section"> <span class="left">&nbsp;</span> <span class="input-holder">
+	                  <input type="text" class="text" value="" id="name" />
+	                  </span> <span class="right">&nbsp;</span> </div>
+                  </div>
+	              <div class="row">
+	                <label for="prep">Zip code:</label>
+	                <div class="input-section"> <span class="left">&nbsp;</span> <span class="input-holder">
+	                  <input type="text" class="text" value="" id="name" />
+	                  </span> <span class="right">&nbsp;</span> </div>
+                  </div>
+	              <div class="row">
+	                <label for="total">Country:</label>
+	                <div class="input-section"> <span class="left">&nbsp;</span> <span class="input-holder">
+	                  <input type="text" class="text" value="" id="name" />
+	                  </span> <span class="right">&nbsp;</span> </div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+	      <div class="box-container">
+	        <div class="save-links">
+	          <div class="link-container"><a href="grocery-home.shtml" class="save">SAVE</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+	<div class="content-b">&nbsp;</div>
+</div>

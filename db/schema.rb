@@ -11,7 +11,62 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120615143933) do
+ActiveRecord::Schema.define(:version => 20120615144036) do
+
+  create_table "ingredients", :force => true do |t|
+    t.string   "name"
+    t.string   "comment"
+    t.string   "quantityMin"
+    t.string   "quantityMinText"
+    t.string   "score"
+    t.string   "text"
+    t.integer  "recipe_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  create_table "measurement_types", :force => true do |t|
+    t.string   "type"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "measurements", :force => true do |t|
+    t.string   "name"
+    t.string   "metricEquivalent"
+    t.integer  "ingredient_id"
+    t.integer  "measurement_type_id"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+  end
+
+  create_table "recipes", :force => true do |t|
+    t.string   "name"
+    t.text     "directions"
+    t.string   "preparationTime"
+    t.string   "preparationTimeText"
+    t.string   "servings"
+    t.string   "servingsComments"
+    t.string   "totalTime"
+    t.string   "totalTimeText"
+    t.string   "cookTime"
+    t.string   "cookTimeText"
+    t.string   "costOfIngredientsDollars"
+    t.string   "costOfIngredientsCents"
+    t.string   "costOfIngredientsText"
+    t.text     "nutritionalInformation"
+    t.text     "text"
+    t.string   "comment"
+    t.string   "category"
+    t.string   "keyIngredients"
+    t.string   "servingSize"
+    t.string   "cuisineType"
+    t.string   "mealType"
+    t.string   "addWine"
+    t.string   "source"
+    t.datetime "created_at",               :null => false
+    t.datetime "updated_at",               :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "name"

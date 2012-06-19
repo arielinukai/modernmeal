@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  comment: MyString
+  quantityMin: MyString
+  quantityMinText: MyString
+  score: MyString
+  text: MyString
+  recipe_id: 1
+
+two:
+  name: MyString
+  comment: MyString
+  quantityMin: MyString
+  quantityMinText: MyString
+  score: MyString
+  text: MyString
+  recipe_id: 1

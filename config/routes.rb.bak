@@ -1,0 +1,30 @@
+Modernmeal::Application.routes.draw do
+  
+  get "email/remind"
+  post "email/remind"
+  
+  get "email/invite"
+  post "email/invite"
+  
+  resources :users do
+    member do
+      get  :change
+      post :change
+      get  :change_picture
+      post :change_picture
+    end
+  end
+      
+  resources :users
+  resources :pages
+  resources :sessions
+  
+  match '/signup',  :to => 'users#new'
+  match '/signin',  :to => 'sessions#new'
+  match '/signout', :to => 'sessions#destroy'
+  match '/home',    :to => 'users#show'
+
+  post "recipes/review"
+  resources :recipes
+
+end

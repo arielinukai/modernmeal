@@ -1,0 +1,111 @@
+<div class="content-holder">
+	<div class="content-t">&nbsp;</div>
+	<div id="content">
+		<img src="/images/gradient.gif" alt="" class="gradient" />
+		<div class="block-container">
+			<div class="top-section">
+				<form action="#" class="top-bar-form">
+					<fieldset>
+						<a href="#" class="search-button">&nbsp;</a>
+						<div class="input-section">
+							<span class="leftside">&nbsp;</span>
+							<span class="input-holder"><input type="text" class="text" value="search for recipes" /></span>
+							<span class="rightside">&nbsp;</span>
+						</div>
+						<label for="sort">Sort By:</label>
+						<select id="sort" class="sel">
+							<option>recipe name</option>
+						</select>
+						<input type="submit" class="submit" value="SEARCH MY RECIPES" />
+					</fieldset>
+				</form>
+			</div>
+			<div class="detail-section">
+				<h2 class="heading">My Recipes</h2>
+				
+				<h3> 					
+						<%= link_to :controller => :recipes, :action => :index do%>
+							<span style="color:#c8ba23">Back to Recipes</span>
+						<% end %> 
+
+				</h3>
+				
+				<div class="recipe-detail-box">
+					<div class="recipe-detail">
+						<div class="name-block">
+							<strong class="name">
+								<%= @recipe.name %>
+							</strong>
+							<img src="/images/image7.jpg" alt="" width="49" height="15" />
+						</div>
+						<div class="recipe-info">
+							<dl class="prep-info">
+								<dt>Prep Time:</dt>
+								<dd>
+									<%= @recipe.preparationTimeText %>
+								</dd>
+								<dt>Total Time:</dt>
+								<dd>
+									<%=  @recipe.totalTimeText %>
+								</dd>
+							</dl>
+							<strong class="recipe-heading">Notes</strong>
+							<p>
+								<% if @recipe.comment == ' ' %>
+									<i>No notes</i>
+								<% elsif %>
+									<%= @recipe.comment %>									
+								<% end %>
+								
+							</p>
+							<strong class="recipe-heading">Paired Wine</strong>
+							<p>
+								<%= @recipe.addWine %>
+							</p>
+							<strong class="recipe-heading">Ingredients</strong>
+							<ul class="ingr-list">
+								<% @recipe.ingredients.each do |i|%>
+								<li>
+									<%= i.quantityMinText+' '+i.measurement.name+' '+i.name%>
+									<% if i.comment != ' ' %>
+									<%= ', '+i.comment %>
+									<% end %>
+								</li>
+								<% end %>
+							</ul>
+							<strong class="recipe-heading">Preparation</strong>
+
+							<%= @recipe.directions %>
+
+							<br/>
+							<br/>
+							 
+							<div class="delete-holder">
+								<!-- <a href="#" class="delete">Delete</a> -->
+
+<%= link_to "Delete this recipe", @recipe, :controller => :recipes, :method => :delete, :confirm => "Are you sure you want to delete this recipe?", :title => "Delete #{@recipe.name}", :class => 'delete' %>
+
+		
+
+							</div>
+						</div>
+					</div>
+					<div class="info-section">
+						<div class="links-section">
+							<a href="#" class="email">Email</a>
+							<a href="#" class="print">Print</a>
+							<a href="grocery-home.shtml" class="add">Add to Grocery List</a>
+						</div>
+						<div class="image-box">
+							<img src="/images/image9.jpg" alt="" width="234" height="234" />
+						</div>
+						<div class="total-box">
+							<%= @recipe.nutritionalInformation %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-b">&nbsp;</div>
+</div>

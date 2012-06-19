@@ -926,7 +926,6 @@ form,fieldset{
 	margin:5px 0 10px 0;
 	margin-left: 45px;
 }
-
 .review-block .image-box a{
 	color:#c8ba23;
 	font-size:10px;
@@ -1081,7 +1080,7 @@ form,fieldset{
   /*background-color: #ffffff;*/
   background: url("../images/bg-sidebar-upper.png") no-repeat scroll 0 0 #FFFFFF;
   width: 173px;
-  padding:27px 0px 40px 12px;
+  padding:27px 0px 12px 12px;
 }
 
 
@@ -1092,7 +1091,6 @@ form,fieldset{
 	padding:0 0 18px 9px;
 	margin:0 0 15px;
 }
-
 #sidebar .title-holder h3{
 	margin:0;
 	font-size:20px;
@@ -1114,12 +1112,12 @@ form,fieldset{
 	width:100%;
 }
 
-#sidebar .sub-nav li {
+#sidebar .sub-nav li{
 	height:1%;
 	vertical-align:top;
 }
 
-#sidebar .sub-nav li a {
+#sidebar .sub-nav li a{
 	color:#91b063;
 	font-size:12px;
 	text-transform:uppercase;
@@ -1127,7 +1125,6 @@ form,fieldset{
 	padding:6px 13px 5px 12px;
 	height:1%;
 }
-
 #sidebar .sub-nav li a:hover,
 #sidebar .sub-nav li.active a{
 	text-decoration:none;
@@ -1136,16 +1133,15 @@ form,fieldset{
 }
 #sidebar .sub-nav li a span{
 	display:block;
-	background:url(/images/bg-sub-nav.gif) no-repeat 100% 50%;
+	background:url(../images/bg-sub-nav.gif) no-repeat 100% 50%;
 }
 #sidebar .sub-nav li a:hover span,
-#sidebar .sub-nav li.active a span{background:url(/images/bg-sub-nav-hover.gif) no-repeat 100% 50%;}
+#sidebar .sub-nav li.active a span{background:url(../images/bg-sub-nav-hover.gif) no-repeat 100% 50%;}
 #sidebar .invite{
 	padding:0 0 0 12px;
 	overflow:hidden;
 	position:relative;
 }
-
 .invite h4{
 	margin:0 0 10px 3px;
 	font-size:12px;
@@ -1305,14 +1301,14 @@ form,fieldset{
 }
 .review-block .recipe-form .form-columns .row{padding:0 0 3px;}
 .review-block .form-columns .ingredient-column{
-	padding:0 10px 0 30px;
-	width:239px;
+	padding:0 0px 0 20px;
+	width:225px;
 }
 .review-block .recipe-form .ingredient-column .text{
 	width:191px;
 	padding-left:0;
 }
-.review-block .form-columns .comments-column{width:189px;}
+.review-block .form-columns .comments-column{width:220px;}
 .review-block .recipe-form .comments-column .text{width:157px;}
 .recipe-box .link-container{
 	position:absolute;
@@ -1493,7 +1489,7 @@ form,fieldset{
 #search .sel.long{width:126px;}
 #search .sel.medium{width:105px;}
 #search .sel.short{width:100px;}
-#search .sel.longest{width:136px;}
+#search .sel.longest{width:160px;}
 .tabs-holder{
 	width:446px;
 	float:right;
@@ -2009,7 +2005,7 @@ form,fieldset{
 	overflow:hidden;
 }
 
-.block-container .threecolumns .column {
+.block-container .threecolumns .column{
 	width:175px;
 	float:left;
 	position:relative;
@@ -2017,22 +2013,18 @@ form,fieldset{
 	height:290px;
 	overflow:hidden;
 }
-
 .onecolumn .column.long{
 	width:300px;
 	padding:11px 0 0 35px;
 }
-
 .block-container .threecolumns .column.long{
 	width:228px;
 	padding:11px 0 0 35px;
 }
-
 .block-container .threecolumns .column.short{
 	width:200px;
 	padding:12px 0 0 17px;
 }
-
 .threecolumns .column .edit{
 	color:#c72323;
 	text-transform:uppercase;
@@ -2054,7 +2046,6 @@ form,fieldset{
 	right:0;
 	padding:0 0 0 13px;
 }
-
 .threecolumns .column.long .edit{
 	background:url(/images/edit-link-icons.gif) no-repeat -261px 0;
 	color:#c8ba23;
@@ -2073,7 +2064,6 @@ form,fieldset{
 	padding:7px 0 5px 21px;
 	word-spacing:-2px;
 }
-
 .threecolumns .column h3{
 	margin:0;
 	font-size:14px;
@@ -2085,7 +2075,6 @@ form,fieldset{
 	word-spacing:-2px;
 }
 .threecolumns .column h3 cufon{float:left;}
-
 .onecolumn .column.long h3{
 	color:#9566c0;
 	background:url(/images/bg-icons.gif) no-repeat -182px -180px;
@@ -2111,12 +2100,10 @@ form,fieldset{
 .onecolumn .column.long .columnshort {
 	padding-top: 15px;
 }
-
 .threecolumns .column.long h3{
 	color:#c8ba23;
 	background:url(/images/bg-icons.gif) no-repeat -182px -21px;
 }
-
 .threecolumns .column.short h3{
 	color:#9566c0;
 	background:url(/images/bg-icons.gif) no-repeat -182px -180px;
@@ -2632,6 +2619,8 @@ form,fieldset{
 	
 }
 
+
+
 .clear{
 	clear:both;
 }
@@ -2677,4 +2666,22 @@ form,fieldset{
 	position: relative;
 	right: -18px;
 	top:-52px;
+}
+.aux-delete{
+	background: url(/images/bg-delete.gif) no-repeat;
+	font: 14px Helvetica,Arial,sans-serif;
+} 
+.aux-add-div{
+	text-align:center;
+}
+.aux-add{
+	background: url(/images/bg-add-item.gif) no-repeat;
+	font: 18px Helvetica,Arial,sans-serif;
+}
+
+.kaminari-paginate{
+	text-align:center;
+	font: 14px Helvetica,Arial,sans-serif;
+	color: #D0C54A;
+	font-weight:bold;
 }

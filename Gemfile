@@ -2,9 +2,6 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.2.3'
 
-# Pagination plugin
-gem 'will_paginate'
-
 # gem 'pg' PostgreSQL driver
 gem 'pg'
 
@@ -13,14 +10,15 @@ gem 'prototype-rails'
 
 # Ambethia Recaptcha
 gem "recaptcha", :require => "recaptcha/rails"
-
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # File attachment library for Active Record
 gem "paperclip", "~> 3.0"
 
-#gem 'sqlite3'
+gem 'sqlite3'
+
+gem "kaminari"  
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -42,5 +40,8 @@ gem "paperclip", "~> 3.0"
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
 # group :development, :test do
+#   gem 'webrat'
+# end
+o
 #   gem 'webrat'
 # end

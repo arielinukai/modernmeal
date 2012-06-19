@@ -1,0 +1,186 @@
+
+
+<div class="content-holder">
+	<div class="content-t">&nbsp;</div>
+	<div id="content">
+		<img src="images/gradient.gif" alt="" class="gradient" />
+		<div class="main-holder">
+			<div class="recipe-search">
+				<h2 class="heading">My Recipes</h2>
+				<div class="search-box">
+					<h3 class="search-title">Search for Recipes</h3>
+					<form action="#" id="search">
+						<fieldset>
+							<div class="row">
+								<span class="input-holder"><input type="text" class="text" value="name of recipe" /></span>
+							</div>
+							<div class="row">
+								<select class="sel longest">
+									<option>key ingredient</option>
+                                    <option>shrimp</option>
+                                    <option>beef</option>
+                                    <option>chicken</option>
+                                    <option>pork</option>
+                                    <option>vegetable</option>
+								</select>
+							</div>
+							<div class="row">
+								<select class="sel longest">
+									<option>meal type</option>
+                                    <option>breakfast</option>
+                                    <option>lunch</option>
+                                    <option>dinner</option>
+                                    <option>snack</option>
+								</select>
+							</div>
+							<div class="row">
+								<select class="sel longest">
+									<option>serving size</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+									<option>5+</option>
+								</select>
+							</div>
+							<div class="row">
+								<select class="sel longest">
+									<option>cuisine</option>
+								</select>
+							</div>
+							<div class="row">
+								<select class="sel longest">
+									<option>prep time</option>
+                                    <option>1-30 mins</option>
+                                    <option>31-45 mins</option>
+                                    <option>45-60 mins</option>
+                                    <option>1 hr +</option>
+								</select>
+							</div>
+							<div class="row">
+								<select class="sel longest">
+									<option>total time</option>
+                                    <option>45 mins</option>
+                                    <option>1 hr</option>
+                                    <option>2 hrs</option>
+								</select>
+							</div>
+							<div class="row">
+								<select class="sel longest ">
+									<option>cost of ingredients</option>
+                                    <option>< $25</option>
+                                    <option>$25-$35</option>
+                                    <option>$36-$45</option>
+                                    <option>$46-$55</option>
+                                    <option>$55+</option>
+								</select>
+							</div>
+							<div class="row">
+								<select class="sel longest">
+									<option>nutritional value</option>
+								</select>
+							</div>
+							<div class="row">
+								<select class="sel longest">
+									<option>family ratings</option>
+                                    <option>**</option>
+                                    <option>***</option>
+                                    <option>****</option>
+                                    <option>*****</option>
+								</select>
+							</div>
+							<div class="row">
+								<select class="sel longest">
+									<option>type of wine</option>
+                                    <option>red</option>
+                                    <option>white</option>
+								</select>
+							</div>
+							<div class="row">
+								<span class="input-holder"><input type="text" class="text" value="source" /></span>
+							</div>
+							<div class="row">
+								<input type="submit" class="submit" value="SEARCH MY RECIPES" />
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<div class="tabs-holder">
+				<ul class="tabset">
+					<li><a href="#tab1" class="tab active">MOST RECENTLY ADDED</a></li>
+					<li><a href="#tab2" class="tab short">IT’S BEEN A WHILE</a></li>
+					<li><a href="#tab3" class="tab rated">TOP-RATED</a></li>
+				</ul>
+				<div class="tabs-container">
+
+
+					<div class="tabcontent">
+						<div id="tab1" class="tab">
+							
+							
+
+
+							<% @recipes.each do |r|%>
+
+							<div class="<%= cycle("row-section", "row-section mark") %>">
+				
+								<!-- LINK TO RECIPE WITH IMAGE-->
+								<a href="my-recipe.shtml">
+									
+								</a>
+
+								<%= link_to :controller => :recipes, :action => :show , :id => r.id do%>
+									<img src="images/image3.jpg" alt="" class="alignleft" width="60" height="60" />
+								<% end %> 
+
+								
+							  <div class="name-box">
+						  		<h3>
+						  			<!-- LINK TO RECIPE ANCHOR -->
+						  			<%= link_to :controller => :recipes, :action => :show , :id => r.id do%>
+						  				<%= r.name %>
+						  			<% end %>
+						  			
+						  		</h3>
+						  			<!-- MUFFINS -->
+									<img src="images/image7.jpg" alt="" width="49" height="15" />
+                                    <br />
+                                    <br />
+									<br />
+                                <a href="#">Add to Weekly Planner</a> | <a href="#">Add to Grocery List</a></div>
+								<div class="info-box">									
+									<dl>
+										<dt>Ingredients</dt>
+										<!-- KEY INGREDIENTS -->
+										<dd>
+											<%= r.keyIngredients %>
+										</dd>
+									</dl>
+									<dl>
+										<dt>Cook Time:</dt>
+										<!-- COOK TIME -->
+										<dd>
+											<% r.cookTimeText %>
+										</dd>
+									</dl>
+								</div>
+							</div>
+
+							<% end %>
+
+							<div class="kaminari-paginate">
+								<p>
+									<%= paginate @recipes %>  
+								</p>
+							</div>
+
+						</div>
+					</div>
+					<div class="bottom-shadow">&nbsp;</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-b">&nbsp;</div>
+</div>

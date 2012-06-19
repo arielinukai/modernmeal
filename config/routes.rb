@@ -24,6 +24,8 @@ Modernmeal::Application.routes.draw do
   match '/signout', :to => 'sessions#destroy'
   match '/home',    :to => 'users#show'
 
+  post "recipes/review"
+  resources :recipes
 
   root :to => 'pages#show'
 end

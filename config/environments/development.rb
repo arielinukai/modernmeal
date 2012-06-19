@@ -26,6 +26,7 @@ Modernmeal::Application.configure do
   # Raise errors if the mailer can't send
   config.action_mailer.raise_delivery_errors = true
 
-  Paperclip.options[:command_path] = "/opt/local/bin/"
+  #Paperclip.options[:command_path] = "/opt/local/bin/"
+  
 end
 
